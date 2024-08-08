@@ -68,7 +68,7 @@ signUpForm.onsubmit = (event) => {
 };
 
 function backButton() {
-  location.reload();
+  window.location.reload();
   fetchSection.classList.add("d-none");
   signUpForm.classList.remove("mb-3");
 }
