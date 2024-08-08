@@ -71,6 +71,10 @@ body form .age-submit button.btn {
 body .fetch-section {
   border-radius: 10px;
   box-shadow: 5px 5px 0px 0 rgba(77, 77, 77, 0.509);
+  width: 400px;
+}
+body .fetch-section .card-header {
+  text-align: center;
 }
 body .fetch-section .card-body {
   font-size: 20px;

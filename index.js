@@ -50,7 +50,7 @@ function fetchIdentity() {
   ) {
     signUpForm.classList.add("mb-3");
     fetchSection.classList.remove("d-none");
-    fnHeader.innerHTML = `Hi, ${firstNameInput.value}! data anda sudah diterima`;
+    fnHeader.innerHTML = `<h1>Hi, ${firstNameInput.value}!</h1><h5> Data anda sudah diterima</h5>`;
     fullName.innerHTML = firstNameInput.value + " " + lastNameInput.value;
     ageValue.innerHTML = ageInput.value;
   } else {

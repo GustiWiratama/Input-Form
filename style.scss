@@ -74,7 +74,14 @@ body {
   .fetch-section {
     border-radius: 10px;
     box-shadow: 5px 5px 0px 0 rgba(77, 77, 77, 0.509);
+    width: 400px;
+
+    // text-align: center;
+    .card-header {
+      text-align: center;
+    }
     .card-body {
+      // background-color: red;
       font-size: 20px;
     }
     button.btn {
