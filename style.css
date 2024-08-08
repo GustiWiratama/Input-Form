@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+body form {
+  padding: 20px;
+  background-color: white;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: flex;
+  border: 1px solid;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0px 0 rgba(77, 77, 77, 0.509);
+}
+body form .title {
+  color: black;
+  margin-bottom: 40px;
+}
+body form .input-section {
+  text-align: left;
+}
+body form .input-section .first-name-section {
+  margin-bottom: 1em;
+}
+body form input.form-control {
+  margin-top: 10px;
+}
+body form .age-submit {
+  display: flex;
+  margin-top: 1em;
+}
+body form .age-submit .age-section {
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+body form .age-submit .age-section .age-content {
+  align-items: center;
+}
+body form .age-submit .age-section .form-control {
+  margin: 10px;
+}
+body form .age-submit .age-section span {
+  margin-left: 100px;
+}
+body form .age-submit span {
+  display: flex;
+  flex-direction: column;
+}
+body form .age-submit button.btn {
+  max-height: 40px;
+  background-color: crimson;
+  margin: 10px 0px 0px 5px;
+  border: none;
+}
+body .fetch-section {
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0 rgba(77, 77, 77, 0.509);
+}
+body .fetch-section .card-body {
+  font-size: 20px;
+}
+body .fetch-section button.btn {
+  max-height: 100%;
+  background-color: crimson;
+  margin: 30px 0px 0px 5px;
+  border: none;
+}
+
+.mb-3 {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
