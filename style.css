@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   min-height: 90vh;
 }
 body form {
+  font-family: Outfit;
   padding: 20px;
   background-color: white;
   max-width: -moz-fit-content;
@@ -25,7 +27,8 @@ body form {
   box-shadow: 5px 5px 0px 0 rgba(77, 77, 77, 0.509);
 }
 body form .title {
-  color: black;
+  font-weight: 700;
+  color: yellowgreen;
   margin-bottom: 40px;
 }
 body form .input-section {
@@ -50,7 +53,7 @@ body form .age-submit .age-section .age-content {
   align-items: center;
 }
 body form .age-submit .age-section .form-control {
-  margin: 10px;
+  margin-left: 10px;
 }
 body form .age-submit .age-section span {
   margin-left: 100px;
@@ -61,7 +64,7 @@ body form .age-submit span {
 }
 body form .age-submit button.btn {
   max-height: 40px;
-  background-color: crimson;
+  background-color: yellowgreen;
   margin: 10px 0px 0px 5px;
   border: none;
 }
@@ -74,7 +77,7 @@ body .fetch-section .card-body {
 }
 body .fetch-section button.btn {
   max-height: 100%;
-  background-color: crimson;
+  background-color: yellowgreen;
   margin: 30px 0px 0px 5px;
   border: none;
 }

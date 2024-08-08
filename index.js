@@ -11,7 +11,6 @@ const fullName = document.querySelector("#fullname-value");
 const ageValue = document.querySelector("#age-value");
 const fnHeader = document.querySelector("#fn-header");
 const back = document.querySelector("#back-button");
-// signUpForm.classList.remove("mb-3");
 
 function validating() {
   if (firstNameInput.value === "") {
