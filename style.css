@@ -37,12 +37,12 @@ body form .input-section {
 body form .input-section .first-name-section {
   margin-bottom: 1em;
 }
-body form input.form-control {
-  margin-top: 10px;
-}
 body form .age-submit {
   display: flex;
   margin-top: 1em;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 body form .age-submit .age-section {
   text-align: center;
@@ -63,18 +63,14 @@ body form .age-submit span {
   flex-direction: column;
 }
 body form .age-submit button.btn {
-  max-height: 40px;
   background-color: yellowgreen;
-  margin: 10px 0px 0px 5px;
+  margin-left: 10px;
   border: none;
 }
 body .fetch-section {
   border-radius: 10px;
   box-shadow: 5px 5px 0px 0 rgba(77, 77, 77, 0.509);
   width: 400px;
-}
-body .fetch-section .card-header {
-  text-align: center;
 }
 body .fetch-section .card-body {
   font-size: 20px;

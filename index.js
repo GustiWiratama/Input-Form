@@ -12,20 +12,30 @@ const ageValue = document.querySelector("#age-value");
 const fnHeader = document.querySelector("#fn-header");
 const back = document.querySelector("#back-button");
 
+const inputHaram = /[!@#$%^&*()_+{}\[\]:;"'<>,.?/~`1234567890]/;
+
 function validating() {
-  if (firstNameInput.value.trim() === "") {
+  if (
+    firstNameInput.value.trim() === "" ||
+    inputHaram.test(firstNameInput.value)
+  ) {
     fnMessage.classList.remove("text-success");
     fnMessage.classList.add("text-danger");
-    fnMessage.innerHTML = "Nama depan tidak boleh kosong!";
+    fnMessage.innerHTML =
+      "Nama depan tidak boleh kosong dan hanya boleh huruf!";
   } else {
     fnMessage.classList.remove("text-danger");
     fnMessage.classList.add("text-success");
     fnMessage.innerHTML = "Sukses";
   }
-  if (lastNameInput.value.trim() === "") {
+  if (
+    lastNameInput.value.trim() === "" ||
+    inputHaram.test(lastNameInput.value)
+  ) {
     lnMessage.classList.remove("text-success");
     lnMessage.classList.add("text-danger");
-    lnMessage.innerHTML = "Nama belakang tidak boleh kosong!";
+    lnMessage.innerHTML =
+      "Nama belakang tidak boleh kosong dan hanya boleh huruf!";
   } else {
     lnMessage.classList.remove("text-danger");
     lnMessage.classList.add("text-success");

@@ -36,18 +36,20 @@ body {
       }
     }
     input.form-control {
-      margin-top: 10px;
+      // margin-top: 10px;
     }
     .age-submit {
       display: flex;
       margin-top: 1em;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
       .age-section {
         text-align: center;
         align-items: center;
         display: flex;
         .age-content {
           align-items: center;
-          // padding: 0;
         }
         .form-control {
           margin-left: 10px;
@@ -60,13 +62,9 @@ body {
         display: flex;
         flex-direction: column;
       }
-      // input {
-      //   height: fit-content;
-      // }
       button.btn {
-        max-height: 40px;
         background-color: yellowgreen;
-        margin: 10px 0px 0px 5px;
+        margin-left: 10px;
         border: none;
       }
     }
@@ -76,10 +74,6 @@ body {
     box-shadow: 5px 5px 0px 0 rgba(77, 77, 77, 0.509);
     width: 400px;
 
-    // text-align: center;
-    .card-header {
-      text-align: center;
-    }
     .card-body {
       // background-color: red;
       font-size: 20px;
