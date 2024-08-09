@@ -13,7 +13,7 @@ const fnHeader = document.querySelector("#fn-header");
 const back = document.querySelector("#back-button");
 
 function validating() {
-  if (firstNameInput.value === "") {
+  if (firstNameInput.value.trim() === "") {
     fnMessage.classList.remove("text-success");
     fnMessage.classList.add("text-danger");
     fnMessage.innerHTML = "Nama depan tidak boleh kosong!";
@@ -22,7 +22,7 @@ function validating() {
     fnMessage.classList.add("text-success");
     fnMessage.innerHTML = "Sukses";
   }
-  if (lastNameInput.value === "") {
+  if (lastNameInput.value.trim() === "") {
     lnMessage.classList.remove("text-success");
     lnMessage.classList.add("text-danger");
     lnMessage.innerHTML = "Nama belakang tidak boleh kosong!";
