@@ -13,7 +13,7 @@ const fnHeader = document.querySelector("#fn-header");
 const back = document.querySelector("#back-button");
 
 const inputHaram = /[!@#$%^&*()_+{}\[\]:;"'<>,.?/~`1234567890]/;
-const stringHaram = ["undefined", "boolean", "number", "null"];
+const stringHaram = ["undefined", "boolean", "null", "number", "object"];
 
 function validating() {
   if (
@@ -27,7 +27,7 @@ function validating() {
   } else if (stringHaram.includes(firstNameInput.value.toLowerCase())) {
     fnMessage.classList.remove("text-success");
     fnMessage.classList.add("text-danger");
-    fnMessage.innerHTML = "Nama anda telah di banned";
+    fnMessage.innerHTML = "Nama tidak dapat berupa tipe data";
   } else {
     fnMessage.classList.remove("text-danger");
     fnMessage.classList.add("text-success");
@@ -44,7 +44,7 @@ function validating() {
   } else if (stringHaram.includes(lastNameInput.value.toLowerCase())) {
     lnMessage.classList.remove("text-success");
     lnMessage.classList.add("text-danger");
-    lnMessage.innerHTML = "Nama anda telah di banned";
+    lnMessage.innerHTML = "Nama tidak dapat berupa tipe data";
   } else {
     lnMessage.classList.remove("text-danger");
     lnMessage.classList.add("text-success");
