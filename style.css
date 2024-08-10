@@ -42,7 +42,7 @@ body form .age-submit {
   margin-top: 1em;
   align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 body form .age-submit .age-section {
   text-align: center;

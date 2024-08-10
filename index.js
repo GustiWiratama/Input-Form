@@ -13,6 +13,7 @@ const fnHeader = document.querySelector("#fn-header");
 const back = document.querySelector("#back-button");
 
 const inputHaram = /[!@#$%^&*()_+{}\[\]:;"'<>,.?/~`1234567890]/;
+const stringHaram = ["undefined", "boolean", "number", "null"];
 
 function validating() {
   if (
@@ -23,6 +24,10 @@ function validating() {
     fnMessage.classList.add("text-danger");
     fnMessage.innerHTML =
       "Nama depan tidak boleh kosong dan hanya boleh huruf!";
+  } else if (stringHaram.includes(firstNameInput.value.toLowerCase())) {
+    fnMessage.classList.remove("text-success");
+    fnMessage.classList.add("text-danger");
+    fnMessage.innerHTML = "Nama anda telah di banned";
   } else {
     fnMessage.classList.remove("text-danger");
     fnMessage.classList.add("text-success");
@@ -36,6 +41,10 @@ function validating() {
     lnMessage.classList.add("text-danger");
     lnMessage.innerHTML =
       "Nama belakang tidak boleh kosong dan hanya boleh huruf!";
+  } else if (stringHaram.includes(lastNameInput.value.toLowerCase())) {
+    lnMessage.classList.remove("text-success");
+    lnMessage.classList.add("text-danger");
+    lnMessage.innerHTML = "Nama anda telah di banned";
   } else {
     lnMessage.classList.remove("text-danger");
     lnMessage.classList.add("text-success");
